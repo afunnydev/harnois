@@ -26,8 +26,8 @@
             <div class="wrap-inner clearfix">
                 <div id="site-logo" class="clearfix">
                     <div id="site-log-inner">
-                        <a href="#nothing" rel="home" class="main-logo">
-                            <img src="/logos/logo-ezkit-couleur.png" alt="Autora" width="172" height="78" data-retina="/logos/logo-ezkit-couleur-2x.png" data-width="172" data-height="78">
+                        <a href='{{- $.Site.BaseURL -}}' rel="home" class="main-logo">
+                            <img src="/logos/logo-ezkit-couleur.png" alt="EzKit" width="172" height="78" data-retina="/logos/logo-ezkit-couleur-2x.png" data-width="172" data-height="78">
                         </a>
                     </div>
                 </div><!-- /#site-logo -->
@@ -41,7 +41,9 @@
                         {{ range .Site.Data.menu.main }}
                         <!-- <li class="menu-item current-menu-item"> -->
                         <li class="menu-item">
-                            <a href="#">{{ if eq $.Lang "fr" }}{{ .fr | upper }}{{ else if eq $.Lang "en" }}{{ .en | upper }}{{ end }}</a>
+                            <a href="{{ if and $.IsHome .homelink }}#{{ .homelink }}{{ else if and (not $.IsHome) .homelink}}{{ $.Site.BaseURL }}#{{ .homelink }}{{ else if .link}}{{ $.Scratch.Get .link }}{{ end }}">
+                                {{ if eq $.Lang "fr" }}{{ .fr | upper }}{{ else if eq $.Lang "en" }}{{ .en | upper }}{{ end }}
+                            </a>
                         </li>
                         {{ end }}
                     </ul>

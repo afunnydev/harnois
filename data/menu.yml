@@ -4,19 +4,19 @@ main:
     link: homePage
   - fr: Design
     en: Design
-    link: articlesPage
+    homelink: design
   - fr: Utilisation
     en: Common uses
-    link: aboutPage
+    homelink: common-uses
   - fr: Fonctionnalités
     en: Features
-    link: contactPage
+    homelink: features
   - fr: "Spécifications"
     en: Product specs
-    link: plansPage
+    homelink: product-specs
   - fr: Support
     en: Support
-    link: plansPage
+    homelink: support
   - fr: Contact
     en: Contact
-    link: plansPage
+    link: contactPage

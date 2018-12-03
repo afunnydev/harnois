@@ -1,4 +1,4 @@
-baseURL = "https://www.tinysociety.co/"
+baseURL = "https://harnois-ezkit.netlify.com/"
 DefaultContentLanguage = "en"
 title = "EzKit"
 theme = "beauharnois"
@@ -24,8 +24,8 @@ defaultContentLanguageInSubdir = false
   ## Include google maps, with API Key
   googleapikey = ""
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = ""
-  siteaddressno = ""
+  siteaddress = "https://harnois-ezkit.netlify.com/"
+  siteaddressno = "https://harnois-ezkit.netlify.com"
   ## FB share info
   fbpagename = ""
   fbappid = ""

@@ -52,20 +52,21 @@ const jsFiles = [
                 ];
 
 const jsSimple = [
-                  'themes/beauharnois/assets/js/theme/jquery-2.1.4.min.js',
-                  'themes/beauharnois/assets/js/theme/ui/jquery.ui.core.js',
-                  'themes/beauharnois/assets/js/theme/ui/jquery.ui.widget.js',
-                  'themes/beauharnois/assets/js/theme/ui/jquery.ui.accordion.js',
-                  'themes/beauharnois/assets/js/theme/ui/jquery.ui.tabs.js',
-                  'themes/beauharnois/assets/js/theme/mfn.menu.js',
-                  'themes/beauharnois/assets/js/theme/jquery.plugins.js',
-                  'themes/beauharnois/assets/js/theme/jquery.jplayer.min.js',
-                  'themes/beauharnois/assets/js/theme/animations/animations.js',
-                  'themes/beauharnois/assets/js/theme/email.js',
-                  'themes/beauharnois/assets/js/theme/scripts.js',
-                  'themes/beauharnois/assets/js/vendor/instafeed.min.js',
-                  'themes/beauharnois/assets/js/vendor/lazyload.js',
-                  'themes/beauharnois/assets/js/vendor/jquery.sticky-sidebar.js',
+                  'themes/beauharnois/assets/js/theme/jquery.min.js',
+                  'themes/beauharnois/assets/js/theme/plugins.js',
+                  'themes/beauharnois/assets/js/theme/tether.min.js',
+                  'themes/beauharnois/assets/js/theme/bootstrap.min.js',
+                  'themes/beauharnois/assets/js/theme/animsition.js',
+                  'themes/beauharnois/assets/js/theme/owl.carousel.min.js',
+                  'themes/beauharnois/assets/js/theme/countto.js',
+                  'themes/beauharnois/assets/js/theme/equalize.min.js',
+                  'themes/beauharnois/assets/js/theme/jquery.isotope.min.js',
+                  'themes/beauharnois/assets/js/theme/owl.carousel2.thumbs.js',
+                  'themes/beauharnois/assets/js/theme/jquery.cookie.js',
+                  'themes/beauharnois/assets/js/theme/gmap3.min.js',
+                  'themes/beauharnois/assets/js/theme/shortcodes.js',
+                  'themes/beauharnois/assets/js/theme/jquery-validate.js',
+                  'themes/beauharnois/assets/js/theme/main.js',
                   'themes/beauharnois/assets/js/main.js'
                 ];
 const jsDest = 'themes/beauharnois/static/js';

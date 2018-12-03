@@ -21,7 +21,7 @@ section2:
     - title: Modular design
       description: >-
         You can purchase the structures and options separately, mixing and matching them to rent customized products to your customers. 
-      icon: 
+      icon: icomoon-design-flexible
       link:
         text: Learn more
         anchor:
@@ -42,7 +42,7 @@ section2:
     - title: Expert Support
       description: >-
         Our experts are there to provide guidance and assistance every step of the way.
-      icon: 
+      icon: icomoon-soutien-continu
       link:
         text: Learn more
         anchor:
@@ -126,15 +126,15 @@ section9:
     - title: Personalized support at every step
       description: >-
         Our specialists are with you every step of the way, offering expert advice to ensure projects are delivered on time and on budget, with products and services that reflect the highest standards of quality.
-      icon:
+      icon: icomoon-soutien-continu
     - title: After-sales service
       description: >-
         Should you have any questions or encounter any issues after installation, our team of experts will be there to support you and find a solution. 
-      icon:
+      icon: icomoon-service-apres-vente
     - title: Parts and accessories
       description: >-
         Contact our head office anytime to order top-quality parts and accessories. You can count on fast delivery to ensure you always have the components you need in stock to rent out your products. 
-      icon: 
+      icon: icomoon-pieces-accessoires
 section10:
   title: Book an appointment
   description: >-

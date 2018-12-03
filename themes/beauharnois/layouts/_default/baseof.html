@@ -8,7 +8,7 @@
 	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
 	{{ $.Scratch.Add "aboutPage" ("a-propos/" | absLangURL) }}
 	{{ else if eq .Lang "en" }}
-	{{ $.Scratch.Add "contactPage" ("contact-us/" | absLangURL) }}
+	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
 	{{ $.Scratch.Add "writePage" ("write-for-us/" | absLangURL) }}
 	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
 	{{ end }}

@@ -153,7 +153,7 @@
                     {{ end }}
 
                     {{ with .Params.section3 }}
-                    <div class="container">
+                    <div class="container" id="design">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="themesflat-spacer clearfix" data-desktop="61" data-mobile="60" data-smobile="60"></div>
@@ -242,7 +242,7 @@
                     {{ end }}
 
                     {{ with .Params.section5}}
-                    <div class="row-iconbox">
+                    <div class="row-iconbox" id="common-uses">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -279,7 +279,7 @@
                     {{ end }}
 
                     {{ with .Params.section6 }}
-                    <div class="row-about">
+                    <div class="row-about" id="features">
                         <div class="container-fluid">
                             <div class="row equalize sm-equalize-auto">
                                 <div class="col-md-6 half-background style-1" style="background-image: url('{{ .image }}')">
@@ -344,7 +344,7 @@
                     {{ end }}
 
                     {{ with .Params.section8 }}
-                    <div class="container">
+                    <div class="container" id="product-specs">
                         <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="30" data-smobile="20"></div> 
                         <div class="row">
                             <div class="flat-content-wrap style-2 clearfix">
@@ -389,7 +389,7 @@
                     {{ end }}
 
                     {{ with .Params.section9 }}
-                    <div class="row-iconbox bg-row-2" style="background-image: url('/images/ezkit-support.jpg')"> 
+                    <div class="row-iconbox bg-row-2" style="background-image: url('/images/ezkit-support.jpg')" id="support"> 
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -495,7 +495,7 @@
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="36" data-mobile="35" data-smobile="35"></div>
                                 <div class="themesflat-contact-form style-2 clearfix">
-                                    <form id="contactform" action='{{ if eq $.Lang "fr" }}/merci{{ else if eq $.Lang "en" }}/en/thank-you{{end}}' netlify name="contact-{{$.Lang}}" role="form" method="post" class="form-submit contact-form wpcf7-form">
+                                    <form id="contactform" action='{{ if eq $.Lang "fr" }}/merci{{ else if eq $.Lang "en" }}/en/thank-you{{end}}' netlify name="home-contact-{{$.Lang}}" role="form" method="post" class="form-submit contact-form wpcf7-form">
                                         <span class="wpcf7-form-control-wrap your-name">
                                             <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                         </span>
