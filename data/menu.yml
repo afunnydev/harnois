@@ -1,0 +1,22 @@
+main:
+  - fr: Accueil
+    en: Home
+    link: homePage
+  - fr: Design
+    en: Design
+    link: articlesPage
+  - fr: Utilisation
+    en: Common uses
+    link: aboutPage
+  - fr: Fonctionnalités
+    en: Features
+    link: contactPage
+  - fr: "Spécifications"
+    en: Product specs
+    link: plansPage
+  - fr: Support
+    en: Support
+    link: plansPage
+  - fr: Contact
+    en: Contact
+    link: plansPage

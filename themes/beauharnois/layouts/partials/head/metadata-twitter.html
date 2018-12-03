@@ -1,0 +1,8 @@
+{{ if .Site.Data.settings.twitter.share}}
+<!-- Twitter Cards summary card with large image https://dev.twitter.com/cards/types/summary-large-image -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@{{.Site.Data.settings.twitter.id}}">
+<meta property="twitter:title" content="{{.Title }}">
+<meta property="twitter:image" content="{{ .Site.Params.siteaddressno }}{{ .Params.image }}">
+<meta property="twitter:description" content="{{ .Description }}">
+{{ end }}

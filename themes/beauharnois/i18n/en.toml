@@ -1,0 +1,131 @@
+[contact]
+  other = "Contact us"
+
+[home]
+  other = "Home"
+
+[services]
+  other = "Our services"
+
+[about]
+  other = "About us"
+
+[clients]
+  other = "Our clients"
+
+[blog]
+  other = "Blog"
+
+[find]
+  other = "Find us"
+
+[email]
+  other = "E-mail us"
+
+[email_plain]
+  other = "E-mail"
+
+[call]
+  other = "Call us"
+
+[sitemap]
+  other = "Sitemap"
+
+[copyright]
+  other = 'All rights reserved. EzKit<sup>TM</sup> designed by MegaDome Buildings.'
+
+[tagline]
+  other = "Toll-free CANADA & UNITED STATES"
+  
+[readmore]
+  other = "Read more"
+
+[recent_articles]
+  other = "Recent articles"
+
+[previous_post]
+  other = "Previous post"
+
+[next_post]
+  other = "Next post"
+
+[book_online]
+  other = "Book an appointment"
+
+[our_promotions]
+  other = "Our deals"
+
+[see_products]
+  other = "See our products"
+
+[catalog]
+  other = "Catalog"
+
+[recent_articles_title]
+  other = "Our most recent articles"
+
+[discover_partners]
+  other = "They partner with us"
+
+[our_partners]
+  other = "Our Partners"
+
+[opening_hrs]
+  other = "Opening Hours"
+
+[by]
+  other = "by"
+
+[in_store]
+  other = "In-store selection"
+
+[book]
+  other = "Book online"
+
+[permanent_discount]
+  other = "Permanent discount"
+
+[name]
+  other = "Name"
+
+[enter_name]
+  other = "Enter your name"
+
+[enter_email]
+  other = "Enter your email"
+
+[subject]
+  other = "Subject"
+
+[enter_message]
+  other = "Write your message"
+
+[send_message]
+  other = "Send your message"
+
+[company]
+  other = "Company"
+
+[phone]
+  other = "Phone number"
+
+[state]
+  other = "State/Province"
+
+[zip]
+  other = "Zip code"
+
+[promo]
+  other = "Promo code"
+
+[already_client]
+  other = "Already a client?"
+
+[preference]
+  other = "Preference"
+
+[yes]
+  other = "Yes"
+
+[no]
+  other = "No"

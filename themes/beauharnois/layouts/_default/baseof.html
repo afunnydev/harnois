@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{$.Lang}}">
+	{{ $.Scratch.Add "homePage" ("/" | absLangURL) }}
+	{{ $.Scratch.Add "articlesPage" ("articles/" | absLangURL) }}
+	{{ $.Scratch.Add "servicesPage" ("services/" | absLangURL) }}
+	{{ $.Scratch.Add "faqPage" ("faq/" | absLangURL) }}
+	{{ if eq .Lang "fr" }}
+	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
+	{{ $.Scratch.Add "aboutPage" ("a-propos/" | absLangURL) }}
+	{{ else if eq .Lang "en" }}
+	{{ $.Scratch.Add "contactPage" ("contact-us/" | absLangURL) }}
+	{{ $.Scratch.Add "writePage" ("write-for-us/" | absLangURL) }}
+	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
+	{{ end }}
+	{{- partial "site-head.html" . -}}
+	<body class="header-fixed page no-sidebar header-style-2 topbar-style-2 menu-has-search">
+		{{ `<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->` | safeHTML }}
+		{{- partial "header/google-tag-manager.html" . -}}
+		<div id="wrapper" class="animsition">
+			<div id="page" class="clearfix">
+			  	{{- partial "site-header.html" . -}}
+				<div id="Content">
+					{{block "main" . }}
+					{{end}}
+				</div>
+				{{- partial "site-footer.html" . -}}
+			</div><!-- /#page -->
+		</div><!-- /#wrapper -->
+		<a id="scroll-top"></a>
+		{{- partial "footer/site-scripts.html" . -}}
+	</body>
+</html>

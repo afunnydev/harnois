@@ -1,0 +1,25 @@
+@import "_variables.scss";
+
+@import "theme/bootstrap.scss";
+@import "theme/animate.scss";
+@import "theme/animsition.scss";
+@import "theme/woocommerce.scss";
+@import "theme/owl.carousel.scss";
+@import "fontawesome/regular.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/fontawesome.scss";
+@import "theme/ionicons.scss";
+@import "theme/font-etline.scss";
+@import "theme/autora-icons.scss";
+@import "theme/shortcodes.scss";
+
+/* For Revolution Slider */
+@import "theme/rev-slider/settings.scss";
+@import "theme/rev-slider/layers.scss";
+@import "theme/rev-slider/navigation.scss";
+@import "theme/style.scss";
+@import "theme/colors/colorakia.scss";
+
+/* Custom Akia CSS */
+@import "_custom.scss";

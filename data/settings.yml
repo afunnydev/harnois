@@ -1,0 +1,42 @@
+socials:
+  facebookurl: 'https://www.facebook.com/tinyhouseloversofficial/'
+  linkedinurl: ''
+  twitterurl: ''
+  youtubeurl: ''
+  instagramurl: 'https://www.instagram.com/tinyhouse_lovers/'
+  googleplusurl: ''
+  pinteresturl: ""
+  vimeourl: ""
+  dribbleurl: ""
+twitter:
+  share: false
+  id: ""
+address:
+  road:
+  app:
+  city:
+  province:
+  postal:
+  country:
+ouverture:
+  fr:
+    - jour: 
+      heures: 
+    - jour:
+      heures: 
+    - jour: 
+      heures: 
+    - jour: 
+      heures: 
+  en:
+    - jour: 
+      heures: 
+    - jour: 
+      heures: 
+    - jour:
+      heures: 
+    - jour: 
+      heures: 
+phone: 1-888-427-6647
+mphone: '+18884276647'
+email: 
