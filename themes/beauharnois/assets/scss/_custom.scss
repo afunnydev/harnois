@@ -151,6 +151,111 @@ sup {
 		text-decoration: underline;
 	}
 }
+.themesflat-gallery.style-1 .text-wrap {
+	background-color: transparent;
+	padding: 20px
+}
+
+/******** MODAL **********/
+
+.triggering-modal-wrapper {
+	display: block;
+    width: 400px;
+    height: 62px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    animation: all 2s linear;
+    z-index: 31;
+    .triggering-modal {
+    	position: relative;
+	    padding: 15px;
+	    background-color: #fff;
+	    border-radius: 4px;
+	    p {
+	    	margin-bottom: 5px !important;
+	    }
+	   	.modal-heading {
+	   		color: $accentcolor;
+    		font-weight: 600;
+    		text-transform: uppercase;
+	   	}
+	   	.modal-avatar {
+	   		max-width: 70px;
+		    position: absolute;
+		    top: 50%;
+		    right: 20px;
+		    transform: translateY(-50%);
+	   	}
+    }
+}
+.modal-open .triggering-modal-wrapper {
+	display: none !important;
+}
+
+#bite-28 .modal-content {
+    background-color: $accentcolor;
+}
+#bite-28 .modal-header {
+    padding: 26px 31px;
+}
+#bite-28 .modal-body {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 23px 31px 27px;
+}
+#bite-28 .popup-title {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: -1px;
+    letter-spacing: 0.1px;
+}
+#bite-28 .modal-header p {
+    font-size: 14px;
+    line-height: 1.86;
+}
+#bite-28 .modal-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    a {
+    	color: white !important;
+    	text-decoration: underline;
+    }
+}
+#bite-28 .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#bite-28 input.form-control {
+    height: 43px;
+}
+#bite-28 textarea.form-control {
+    padding: 12px;
+    height: 76px;
+} 
+#bite-28 .btn {
+    background-color: #1565c0;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 43px;
+}
+#bite-28 .btn:hover {
+    background-color: #217ee7;
+}
+#bite-28 .btn:active {
+    background-color: #104d92;
+}
+@media only screen and (max-width: 767px) {
+    #bite-28 .modal-content {
+        text-align: center;
+    }
+    #bite-28 .col-md-auto {
+        margin-bottom: 20px;
+    }
+    .triggering-modal-wrapper {
+    	display: none !important;
+    }
+}
 
 /******** RESPONSIVE ********/
 
@@ -166,13 +271,29 @@ sup {
 	.special-akia-column {
 		margin-bottom: 20px;
 	}
+	.themesflat-gallery.style-1 .text-wrap {
+		left: 0px;
+		span {
+			font-size: 18px;
+			line-height: 24px
+		}
+		.heading {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
 }
 
 @media only screen and (max-width: 767px) {
+	.themesflat-gallery.style-1 .text-wrap {
+		left: 20px;		
+	}
 }
 
 @media only screen and (max-width: 479px) {
-	
+	.themesflat-gallery.style-1 .text-wrap {
+		display: block !important;
+	}
 }
 @media only screen and (max-width: 400px) {
 	

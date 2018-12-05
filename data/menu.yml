@@ -5,18 +5,23 @@ main:
   - fr: Design
     en: Design
     homelink: design
+    class: inner-menu-link
   - fr: Utilisation
     en: Common uses
     homelink: common-uses
+    class: inner-menu-link
   - fr: Fonctionnalités
     en: Features
     homelink: features
+    class: inner-menu-link
   - fr: "Spécifications"
     en: Product specs
     homelink: product-specs
+    class: inner-menu-link
   - fr: Support
     en: Support
     homelink: support
+    class: inner-menu-link
   - fr: Contact
     en: Contact
     link: contactPage

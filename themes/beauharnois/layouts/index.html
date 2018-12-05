@@ -416,18 +416,18 @@
                     {{ end }}
 
                     {{ with .Params.section9 }}
-                    <div class="row-iconbox bg-row-2" style="background-image: url('/images/ezkit-support.jpg')" id="support"> 
+                    <div class="row-iconbox bg-row-2" style="background-image: url('/images/ezkit-support-black.jpg')" id="support"> 
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
                                     <div class="themesflat-headings style-1 text-center clearfix">
-                                        <h2 class="heading text-black">{{ .title | upper }}</h2>
+                                        <h2 class="heading text-white">{{ .title | upper }}</h2>
                                         <div class="sep has-icon width-125 border-color-light clearfix">
                                             <div class="sep-icon ">
-                                                <span class="sep-icon-before sep-center sep-solid"></span>
+                                                <span class="sep-icon-before sep-center sep-solid" style="border-color: white;"></span>
                                                 <span class="icon-wrap"><i class="fas fa-question-circle"></i></span>
-                                                <span class="sep-icon-after sep-center sep-solid"></span>
+                                                <span class="sep-icon-after sep-center sep-solid" style="border-color: white;"></span>
                                             </div>
                                         </div>                                                
                                     </div>
@@ -464,7 +464,7 @@
                     {{ end }}
 
                     {{ with .Params.section10 }}
-                    <div class="row-request parallax parallax-3 overlayed" style="background-image: url('/images/ezkit-book-appointment-2.jpg')">
+                    <div class="row-request parallax parallax-3 overlayed" style="background-image: url('/images/ezkit-book-appointment-2.jpg')" id="book-an-appointment">
                         <div class="black-overlay opacity-extra-medium"></div>
                         <div class="container">
                             <div class="row">
@@ -523,7 +523,7 @@
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="36" data-mobile="35" data-smobile="35"></div>
                                 <div class="themesflat-contact-form style-2 clearfix">
-                                    <form id="contactform" netlify action='/thank-you' role="form" method="post" class="form-submit contact-form wpcf7-form">
+                                    <form id="contactform" name="home-contact-en" netlify action='/thank-you' role="form" method="post" class="form-submit contact-form wpcf7-form">
                                         <span class="wpcf7-form-control-wrap your-name">
                                             <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                         </span>

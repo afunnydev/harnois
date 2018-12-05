@@ -1,0 +1,40 @@
+<div class="triggering-modal-wrapper">
+    <div class="triggering-modal" data-toggle="modal" data-target="#bite-28">
+        <p class="modal-heading">Need help?</p>
+        <p>Not a rental center but interested?</p>
+        <div class="modal-avatar">
+            <img src="/logos/logo-ezkit-couleur-sans.png" alt="EzKit">
+        </div>
+    </div>
+</div>
+<div class="modal fade position-bottom-right m-width-300" id="bite-28" bite-show="slideInUp" bite-hide="slideOutDown">
+    <div class="modal-dialog animated fast">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-light" data-dismiss="modal"></button>  
+            </div>
+            <div class="modal-body">
+                <p class="popup-text mb-4 text-white text-center">Still have question?</p>
+                <p class="popup-text mb-4 text-white text-center">Reach out to us at <a href="tel:{{ $.Site.Data.settings.mphone }}">{{ $.Site.Data.settings.phone }}</a> or <a href="mailto:{{ $.Site.Data.settings.email }}">{{ $.Site.Data.settings.email }}</a> to ask any questions you may have, to discuss your project or to book an appointment.</p>
+                <form class="form-question" action='/thank-you' netlify name="popup-{{$.Lang}}" role="form" method="post">
+                    <div class="input-group mb-2">
+                        <input type="text" name="name" class="form-control rounded border-0 text-light email-address" placeholder='{{ i18n "name" }}' required/>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="text" name="company" class="form-control rounded border-0 text-light email-address" placeholder='{{ i18n "company" }}' required/>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="text" name="zip" class="form-control rounded border-0 text-light email-address" placeholder='{{ i18n "zip" }}' required/>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="text" name="phone" class="form-control rounded border-0 text-light email-address" placeholder='{{ i18n "phone" }}' required/>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="email" name="email" class="form-control rounded border-0 text-light email-address" placeholder='{{ i18n "email" }}' required/>
+                    </div>
+                    <button class="btn btn-block text-white" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

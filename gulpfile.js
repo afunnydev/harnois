@@ -48,6 +48,7 @@ const jsFiles = [
                   'themes/beauharnois/assets/js/theme/rev-slider/extensions/revolution.extension.parallax.min.js',
                   'themes/beauharnois/assets/js/theme/rev-slider/extensions/revolution.extension.slideanims.min.js',
                   'themes/beauharnois/assets/js/theme/rev-slider/extensions/revolution.extension.video.min.js',
+                  'themes/beauharnois/assets/js/vendor/bites.js',
                   'themes/beauharnois/assets/js/main.js'
                 ];
 
@@ -67,6 +68,7 @@ const jsSimple = [
                   'themes/beauharnois/assets/js/theme/shortcodes.js',
                   'themes/beauharnois/assets/js/theme/jquery-validate.js',
                   'themes/beauharnois/assets/js/theme/main.js',
+                  'themes/beauharnois/assets/js/vendor/bites.js',
                   'themes/beauharnois/assets/js/main.js'
                 ];
 const jsDest = 'themes/beauharnois/static/js';

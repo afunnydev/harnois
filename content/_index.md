@@ -50,7 +50,7 @@ section2:
 section3:
   title: Modular design
   description: >-
-    **Rent the perfect customized building to your customers**. EzKit<sup>TM</sup> is designed to be flexible. You can choose from different structure lengths and options, then mix and match them as needed to offer your clients a product that is customized to them. EzKit<sup>TM</sup> is engineered to meet the unique and needs of your customers, while ensuring you always have products in stock to rent out.
+    **Rent the perfect customized building to your customers**.<br>EzKit<sup>TM</sup> is designed to be flexible. You can choose from different structure lengths and options, then mix and match them as needed to offer your clients a product that is customized to them. EzKit<sup>TM</sup> is engineered to meet the unique and needs of your customers, while ensuring you always have products in stock to rent out.
   box1:
     title: Need more information?
     description: >-

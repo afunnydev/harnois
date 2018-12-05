@@ -13,7 +13,7 @@
 	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
 	{{ end }}
 	{{- partial "site-head.html" . -}}
-	<body class="header-fixed page no-sidebar header-style-2 topbar-style-2 menu-has-search">
+	<body class="header-fixed page no-sidebar header-style-2 topbar-style-2 menu-has-search {{ if .IsHome }}attach-scroll-handler{{ end }}">
 		{{ `<!--[if lt IE 9]>
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->` | safeHTML }}
@@ -29,6 +29,7 @@
 			</div><!-- /#page -->
 		</div><!-- /#wrapper -->
 		<a id="scroll-top"></a>
+		{{- partial "site/modal.html" . -}}
 		{{- partial "footer/site-scripts.html" . -}}
 	</body>
 </html>
