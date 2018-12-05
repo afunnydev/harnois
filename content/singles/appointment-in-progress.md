@@ -2,20 +2,20 @@
 title: "EZKit | Thanks for your time"
 description: >-
   Thank you for your interest in our EZKit product
-slug: thank-you
+slug: appointment-in-progress
 layout: merci
 image: 
 noindex: true
 ---
 
-Thank you for contacting the EzKit<sup>TM</sup> team of experts! 
+Thank you for reaching out to the EzKit<sup>TM</sup> team of experts! 
 
-We strive to respond to all messages quickly. 
+We will get back to you very soon to set up a time and place to meet. We strive to  respond to all messages quickly.  
 
 Our head office hours are Monday to Friday from 8am to 5pm EST. 
 
-Best,
- 
+Best, 
+
 The EzKit<sup>TM</sup> team
 
 [Back to home page](/)

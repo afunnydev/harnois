@@ -17,35 +17,36 @@ section2:
   title: WHY THE EZKIT<sup>TM</sup> IS PERFECT FOR YOUR CUSTOMERS 
   description: >-
     EzKit<sup>TM</sup> is a temporary fabric building that equipment rental centers can purchase and rent out to their customers to answer their short-term storage needs. Designed to protect storage from the elements, it is durable enough to rent out many times without damage.
-  icons:
+  icons1:
     - title: Modular design
       description: >-
         You can purchase the structures and options separately, mixing and matching them to rent customized products to your customers. 
       icon: icomoon-design-flexible
       link:
         text: Learn more
-        anchor:
+        anchor: design
     - title: Adapted to multiple sectors
       description: >-
         EzKit<sup>TM</sup> meets the various needs of the industrial, municipal and agricultural sectors.
       icon: fas fa-check-square
       link:
-        text: Discover common uses
-        anchor:
+        text: Learn more
+        anchor: common-uses
+  icons2:
     - title: Easy to rent
       description: >-
         Designed to solve the challenges faced by equipment rental centers and to meet the needs of their customers. 
       icon: fas fa-key
       link:
         text: Learn more
-        anchor:
+        anchor: features
     - title: Expert Support
       description: >-
         Our experts are there to provide guidance and assistance every step of the way.
       icon: icomoon-soutien-continu
       link:
         text: Learn more
-        anchor:
+        anchor: support
 section3:
   title: Modular design
   subtitle: Rent the perfect customized building to your customers
@@ -67,10 +68,10 @@ section4:
   image: /images/ezkit-add-options.jpg
   title: Add options
   description: >-
-    Choose from the different options to create the right temporary structure. Each option is sold separately and can be added to any structure. The modular design of the EzKit<sup>TM</sup> allows you to configure each structure so you can rent it out with the specific options your clients need. 
+    Choose from different options to create the right temporary structure. Each option is sold separately and can be added to any structure. The modular design of the EzKit<sup>TM</sup> allows you to configure each structure so you can rent it out with the specific options your clients need. 
   tabs:
     - title: Branded
-      description: Personalize your temporary building by adding your company logo.
+      description: Personalize your temporary building by adding your company logo on the fabric.
     - title: One closed end
       description: Provides additional weather protection without completely closing the ends.
     - title: Two closed ends with a door
@@ -84,17 +85,17 @@ section5:
   icons:
     - title: Agricultural
       description: >-
-        Protect bulk goods or agricultural equipment <br>
+        **Protect bulk goods or agricultural equipment** <br>
         Common uses: hay shelter, small machinery storage and more.
       icon: ion-ios-nutrition
     - title: Industrial
       description: >-
-        Use on mining or forestry sites to store machinery and materials during construction projects <br>
+        **Use on mining or forestry sites to store machinery and materials during construction projects** <br>
         Common uses: equipment and bulk storage, recycling, composting and more.
       icon: fas fa-industry
     - title: Municipal
       description: >-
-        Perfectly adapted for public spaces and events, crisis management, ports or sports activities <br>
+        **Perfectly adapted for public spaces and events, crisis management, ports or sports activities** <br>
         Common uses: equipment and bulk storage, road signs, machinery, emergency shelters and more.
       icon: fas fa-city
 section6:
@@ -111,7 +112,6 @@ section7:
   title: Learn more about this new product, which you can rent out easily to your clients.
   link:
     text: Contact Us
-    link: #
 section8:
   title: Product specifications
   points:
@@ -123,13 +123,13 @@ section8:
 section9: 
   title: Expert support
   icons:
-    - title: Personalized support at every step
+    - title: Personalized support
       description: >-
         Our specialists are with you every step of the way, offering expert advice to ensure projects are delivered on time and on budget, with products and services that reflect the highest standards of quality.
       icon: icomoon-soutien-continu
     - title: After-sales service
       description: >-
-        Should you have any questions or encounter any issues after installation, our team of experts will be there to support you and find a solution. 
+        Should you have any questions or encounter any issues, our team of experts will be there to support you and find a solution. 
       icon: icomoon-service-apres-vente
     - title: Parts and accessories
       description: >-

@@ -10,7 +10,7 @@
                         <div id="rev-slider1" class="rev_slider fullwidthabanner">
                             <ul>
                                 <!-- Slide 1 -->
-                                <li data-transition="random">
+                                <li data-transition="fade">
                                     <!-- Main Image -->
                                     <img src="/images/ezkit-megadome-rental-banner.jpg" alt="" data-bgposition="center center" data-no-retina>
                                    
@@ -124,22 +124,45 @@
                             </div><!-- /.row -->
 
                             <div class="themesflat-row gutter-30 clearfix">
-                                {{ range .icons }}
-                                <div class="col span_1_of_3">
+                                <div class="col span_1_of_6">
+                                    {{ range $i, $e := .icons1 }}
                                     <div class="themesflat-icon-box icon-left accent-color style-2 clearfix">
                                         <div class="icon-wrap">
-                                            <i class="{{ .icon }}"></i>
+                                            <i class="{{ $e.icon }}"></i>
                                         </div>
                                         <div class="text-wrap">
-                                            <h5 class="heading"><a href="#">{{ .title }}</a></h5>
-                                            <p class="sub-heading">{{ .description | markdownify }}</p>
+                                            <h5 class="heading"><a href="#">{{ $e.title }}</a></h5>
+                                            <p class="sub-heading">{{ $e.description | markdownify }}</p>
                                             <div class="elm-readmore">
-                                                <a href="#{{ .link.anchor }}">{{ .link.text | upper }}</a>
+                                                <a href="#{{ $e.link.anchor }}">{{ $e.link.text | upper }}</a>
                                             </div>
                                         </div>
                                     </div><!-- /.themesflat-icon-box -->
-                                </div><!-- /.col-md-4 -->
-                                {{ end }}
+                                    {{ if eq $i 0}}
+                                    <div class="themesflat-spacer clearfix" data-desktop="30" data-mobile="20" data-smobile="20"></div>
+                                    {{ end }}
+                                    {{ end }}
+                                </div><!-- /.col-md-6 -->
+
+                                <div class="col span_1_of_6">
+                                    {{ range $i, $e := .icons2 }}
+                                    <div class="themesflat-icon-box icon-left accent-color style-2 clearfix">
+                                        <div class="icon-wrap">
+                                            <i class="{{ $e.icon }}"></i>
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h5 class="heading"><a href="#">{{ $e.title }}</a></h5>
+                                            <p class="sub-heading">{{ $e.description | markdownify }}</p>
+                                            <div class="elm-readmore">
+                                                <a href="#{{ $e.link.anchor }}">{{ $e.link.text | upper }}</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.themesflat-icon-box -->
+                                    {{ if eq $i 0}}
+                                    <div class="themesflat-spacer clearfix" data-desktop="30" data-mobile="20" data-smobile="20"></div>
+                                    {{ end }}
+                                    {{ end }}
+                                </div><!-- /.col-md-6 -->
                                      
                             </div><!-- /.row -->
 
@@ -158,9 +181,9 @@
                             <div class="col-md-12">
                                 <div class="themesflat-spacer clearfix" data-desktop="61" data-mobile="60" data-smobile="60"></div>
                                 <div class="themesflat-headings style-1 text-center clearfix">
-                                    <h2 class="heading font-size-30">{{ .title | markdownify }}</h2>
+                                    <h2 class="heading font-size-30">{{ .title | upper | markdownify }}</h2>
                                     <p class="sub-heading font-weight-400" style="margin-top: 0; margin-bottom: 20px">{{ .subtitle | markdownify }}</p>
-                                    <p class="font-weight-400">{{ .description | markdownify }}</p>
+                                    <p class="sub-heading font-weight-400">{{ .description | markdownify }}</p>
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="20" data-mobile="15" data-smobile="10"></div>
                             </div><!-- /.col-md-12 -->
@@ -168,22 +191,24 @@
                         
                         <div class="row equalize sm-equalize-auto clearfix">
                             {{ with .box1 }}
-                            <div class="col-md-4 widget widget_help align-center has-shadow no-sep has-border border-solid">
-                                <div class="inner">
-                                    <h2 class="widget-title margin-bottom-14"><span>{{ .title | upper }}</span></h2>
-                                    <p class="text line-height-26 margin-bottom-23">
-                                        {{ .description }}
-                                    </p>
-                                    <div class="elm-button">
-                                        <a href="#{{ .link.anchor }}" class="themesflat-button bg-accent pd30">{{ .link.text | upper }}</a>
-                                    </div>
-                                </div>                                
+                            <div class="col-lg-3 col-md-12 special-akia-column">
+                                <div class="widget widget_help align-center has-shadow no-sep has-border border-solid akia-placing-inner" style="height: 100%;">
+                                    <div class="inner">
+                                        <h2 class="widget-title margin-bottom-14"><span>{{ .title | upper }}</span></h2>
+                                        <p class="text line-height-26 margin-bottom-23">
+                                            {{ .description }}
+                                        </p>
+                                        <div class="elm-button">
+                                            <a href="#{{ .link.anchor }}" class="themesflat-button bg-accent pd30">{{ .link.text | upper }}</a>
+                                        </div>
+                                    </div>    
+                                </div>                            
                             </div>
                             {{ end }}
                             {{ with .box2 }}
-                            <div class="col-md-8">
+                            <div class="col-lg-9 col-md-12">
                                 <div class="themesflat-row equalize sm-equalize-auto clearfix">
-                                    <div class="span_1_of_6 bg-f7f">
+                                    <div class="span_1_of_6 span_1_of_5 bg-f7f">
                                         <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
                                         <div class="themesflat-content-box clearfix" data-margin="0 10px 0 43px" data-mobilemargin="0 15px 0 15px">
                                             <div class="themesflat-headings style-2 clearfix">
@@ -195,7 +220,7 @@
                                         </div>                               
                                         <div class="themesflat-spacer clearfix" data-desktop="56" data-mobile="56" data-smobile="56"></div> 
                                     </div>
-                                    <div class="span_1_of_6 half-background style-2" style="background-image: url('{{ .image }}')">                        
+                                    <div class="span_1_of_6 span_1_of_7 half-background style-2" style="background-image: url('{{ .image }}')">                        
                                     </div>
                                 </div><!-- /.themesflat-row -->
                             </div>
@@ -248,7 +273,7 @@
                                 <div class="col-md-12">
                                     <div class="themesflat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
                                     <div class="themesflat-headings style-1 text-center clearfix">
-                                        <h2 class="heading">{{ .title }}</h2>
+                                        <h2 class="heading">{{ .title | upper }}</h2>
                                         <p class="sub-heading" style="margin-top: 0">{{ .description | markdownify }}</p>
                                     </div>
                                     <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
@@ -331,7 +356,7 @@
                                                     <h3 class="heading">{{- .title -}}</h3>
                                                 </div>
                                                 <div class="button-wrap has-icon icon-left">
-                                                    <a href="{{ .link.link }}" class="themesflat-button bg-white small"><span>{{ .link.text }} <span class="icon"><i class="autora-icon-phone-contact"></i></span></span></a>
+                                                    <a href="#contact-us-form" class="themesflat-button bg-white small"><span>{{ .link.text }} <span class="icon"><i class="autora-icon-phone-contact"></i></span></span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,13 +397,8 @@
                                             <h5 class="title text-white line-height-24 padding-left-7">{{ .ctatitle | upper | markdownify }}</h5>
                                             <div class="themesflat-spacer clearfix" data-desktop="16" data-mobile="16" data-smobile="16"></div>
                                             <div class="button-wrap has-icon icon-right size-14">
-                                                <a href="#" class="themesflat-button bg-white color-333 w100 font-weight-400 no-letter-spacing pd26"><span>Download .PDF <span class="icon"><i class="fa fa-file-pdf-o"></i></span></span></a>
+                                                <a href="#" class="themesflat-button bg-white color-333 w100 font-weight-400 no-letter-spacing pd26"><span>Download <span class="icon"><i class="fa fa-file-pdf-o"></i></span></span></a>
                                             </div><!-- /.button-wrap -->
-                                            <div class="themesflat-spacer clearfix" data-desktop="6" data-mobile="6" data-smobile="6"></div>
-                                            <div class="button-wrap has-icon icon-right size-14">
-                                                <a href="#" class="themesflat-button bg-white color-333 w100 font-weight-400 no-letter-spacing pd26 "><span> Download .DOC <span class="icon"><i class="fa fa-file-word-o"></i></span></span></a>
-                                            </div>                                   
-                                            
                                         </div>
                                     </div>                                    
                                 </div>       
@@ -408,11 +428,11 @@
                                 </div><!-- /.col-md-12 -->
                             </div><!-- /.row -->
 
-                            <div class="themesflat-row gutter-30 gutter-mobile clearfix">
+                            <div class="themesflat-row row gutter-30 gutter-mobile equalize sm-equalize-auto clearfix">
                                 {{ range .icons }}
                                 <div class="col span_1_of_4">
                                     <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>
-                                    <div class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 bg-white-column padding-inner clearfix">
+                                    <div class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 bg-white-column padding-inner clearfix akia-full-height-col">
                                         <div class="icon-wrap">
                                             <i class="{{ .icon }}"></i>
                                         </div>
@@ -438,7 +458,7 @@
 
                     {{ with .Params.section10 }}
                     <div class="row-request parallax parallax-3 overlayed" style="background-image: url('/images/ezkit-book-appointment-2.jpg')">
-                        <div class="black-overlay opacity-light"></div>
+                        <div class="black-overlay opacity-extra-medium"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 ">
@@ -448,11 +468,11 @@
                                             <div class="themesflat-headings style-1 clearfix">
                                                 <h2 class="heading text-white line-height-normal">{{ .title | upper }}</h2>
                                                 <div class="sep has-width w80 accent-bg margin-top-13 clearfix"></div>                                               
-                                                <p class="sub-heading margin-top-22 font-size-14 line-height-24 text-white font-weight-400" style="padding-right: 20px">{{ .description | markdownify }}</p>
+                                                <p class="sub-heading margin-top-22 font-size-14 line-height-24 text-white font-weight-400" style="padding-right: 40px">{{ .description | markdownify }}</p>
                                             </div><!-- /.themesflat-heading -->
                                             <div class="themesflat-contact-form style-1 clearfix">
                                                 <div class="themesflat-spacer clearfix" data-desktop="8" data-mobile="8" data-smobile="8"></div>
-                                                <form action='{{ if eq $.Lang "fr" }}/merci{{ else if eq $.Lang "en" }}/en/thank-you{{end}}' netlify name="book-{{$.Lang}}" role="form" method="post" class="contact-form wpcf7-form">
+                                                <form action='/appointment-in-progress' netlify name="book-{{$.Lang}}" role="form" method="post" class="contact-form wpcf7-form">
                                                     <span class="wpcf7-form-control-wrap your-name">
                                                         <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}' required>
                                                     </span>
@@ -470,7 +490,8 @@
                                                     </span> 
 
                                                     <span class="wrap-submit">
-                                                        <input type="submit" value='{{ i18n "book" }}' class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
+                                                        <div data-netlify-recaptcha></div>
+                                                        <input type="submit" value='{{ i18n "send" }}' class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
                                                     </span>                                                            
                                                 </form>
                                             </div>
@@ -484,7 +505,7 @@
                     {{ end }}
 
                     {{ with .Params.section11 }}
-                    <div class="container">
+                    <div class="container" id="contact-us-form">
                         <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="30" data-smobile="20"></div> 
                         <div class="row">
                             <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
@@ -495,7 +516,7 @@
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="36" data-mobile="35" data-smobile="35"></div>
                                 <div class="themesflat-contact-form style-2 clearfix">
-                                    <form id="contactform" action='{{ if eq $.Lang "fr" }}/merci{{ else if eq $.Lang "en" }}/en/thank-you{{end}}' netlify name="home-contact-{{$.Lang}}" role="form" method="post" class="form-submit contact-form wpcf7-form">
+                                    <form id="contactform" action='/thank-you' role="form" method="post" class="form-submit contact-form wpcf7-form">
                                         <span class="wpcf7-form-control-wrap your-name">
                                             <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                         </span>
@@ -543,6 +564,10 @@
                                                 </span>
                                             </span>
                                         </span>  
+                                        
+                                        <div data-netlify-recaptcha></div> 
+                                            
+                                        <div class="themesflat-spacer clearfix" data-desktop="10" data-mobile="10" data-smobile="10"></div>
 
                                         <span class="wrap-submit">
                                             <input type="submit" value='{{ i18n "send_message" }}' class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">

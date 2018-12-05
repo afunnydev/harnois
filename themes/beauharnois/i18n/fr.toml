@@ -103,6 +103,9 @@
 [send_message]
   other = "Envoyez votre message"
 
+[send]
+  other = "Envoyer"
+
 [company]
   other = "Compagnie"
 

@@ -1,78 +1,13 @@
 {{ define "main" }}
-<!-- Featured Title -->
-<!-- <div id="featured-title" class="featured-title clearfix">
-    <div id="featured-title-inner" class="container clearfix">
-        <div class="featured-title-inner-wrap">                    
-            <div id="breadcrumbs">
-                <div class="breadcrumbs-inner">
-                    <div class="breadcrumb-trail">
-                        <a href='{{ $.Site.BaseURL }}' class="trail-begin">{{ i18n "home" }}</a>
-                        <span class="sep">|</span>
-                        <span class="trail-end">Contact</span>
-                    </div>
-                </div>
-            </div>
-            <div class="featured-title-heading-wrap">
-                <h1 class="feautured-title-heading">
-                    {{ .Params.titre }}
-                </h1>
-            </div>
-        </div>
-    </div>         
-</div> -->
-<!-- End Featured Title -->
-
 <!-- Main Content -->
 <div id="main-content" class="site-main clearfix">
     <div id="content-wrap">
         <div id="site-content" class="site-content clearfix">
             <div id="inner-content" class="inner-content-wrap">
                <div class="page-content">
-                    {{ with .Params.section1 }}
-                    <div class="row-about">
-                        <div class="container-fluid">
-                            <div class="row equalize sm-equalize-auto">
-                                <div class="col-md-6 half-background style-1" style="background-image: url('{{ .image }}')">
-                                    
-                                </div><!-- /.col-md-6 -->
-                                <div class="col-md-6 bg-light-grey">
-                                    <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
-                                    <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
-                                        <div class="themesflat-headings style-1 clearfix">
-                                            <h2 class="heading akia-contact">{{ .title | upper }}</h2>
-                                            <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
-                                            <p class="sub-heading margin-top-30">{{ .description1 | markdownify }}</p>
-                                        </div>
-                                        <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
-                                        <div class="content-list">
-                                            {{ range .points }}
-                                            <div class="themesflat-list has-icon style-1 icon-left clearfix">
-                                                <div class="inner">
-                                                    <span class="item">
-                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
-                                                        <span class="text">{{- .text -}}</span>
-                                                    </span>
-                                                </div>
-                                            </div><!-- /.themeslat-list -->
-                                            {{ end }}
-                                        </div><!-- /.content-list -->
-                                        <div class="themesflat-headings style-1 clearfix">                                             
-                                            <p class="sub-heading margin-top-30">{{ .description2 | markdownify }}</p>
-                                        </div>
-                                        <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
-                                        <div class="elm-button">
-                                            <a href='{{- $.Site.BaseURL -}}'  class="themesflat-button bg-white">{{ .link | upper }}</a>
-                                        </div>
-                                    </div><!-- /.themesflat-content-box --> 
-                                    <div class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
-                                </div><!-- /.col-md-6 -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container-fluid -->
-                    </div>
-                    {{ end }}
 
                     {{ with .Params.section2 }}
-                    <div class="row-contact">
+                    <div class="row-contact bg-light-grey" id="contact-us-form">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -88,7 +23,7 @@
                                     </div>
                                     <div class="themesflat-spacer clearfix" data-desktop="36" data-mobile="35" data-smobile="35"></div>
                                     <div class="themesflat-contact-form style-2 clearfix">
-                                        <form id="contactform" action='{{ if eq $.Lang "fr" }}/merci{{ else if eq $.Lang "en" }}/en/thank-you{{end}}' netlify name="contact-{{$.Lang}}" role="form" method="post" class="form-submit contact-form wpcf7-form">
+                                        <form id="contactform" action='/thank-you' netlify name="contact-{{$.Lang}}" role="form" method="post" class="form-submit contact-form wpcf7-form">
                                             <span class="wpcf7-form-control-wrap your-name">
                                                 <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                             </span>
@@ -137,6 +72,10 @@
                                                 </span>
                                             </span>  
 
+                                            <div data-netlify-recaptcha></div> 
+                                            
+                                            <div class="themesflat-spacer clearfix" data-desktop="10" data-mobile="10" data-smobile="10"></div>
+                                            
                                             <span class="wrap-submit">
                                                 <input type="submit" value='{{ i18n "send_message" }}' class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
                                             </span>                                                            
@@ -183,7 +122,7 @@
                                                         <li class="clearfix">
                                                             <div class="inner">
                                                                 <span class="fa fa-envelope"></span>
-                                                                <span class="text">{{ .email }}</span>
+                                                                <a href="mailto:{{ .email }}"><span class="text">{{ .email }}</span></a>
                                                             </div>
                                                         </li>
                                                     </ul>  
@@ -202,6 +141,50 @@
                         </div><!-- /.container -->
                     </div>
                     {{ end }}
+
+                    {{ with .Params.section1 }}
+                    <div class="row-about">
+                        <div class="container-fluid">
+                            <div class="row equalize sm-equalize-auto">
+                                <div class="col-md-6 half-background style-1" style="background-image: url('{{ .image }}'); background-position: 70% center;">
+                                    
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
+                                    <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
+                                        <div class="themesflat-headings style-1 clearfix">
+                                            <h2 class="heading akia-contact">{{ .title | upper }}</h2>
+                                            <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
+                                            <p class="sub-heading margin-top-30">{{ .description1 | markdownify }}</p>
+                                        </div>
+                                        <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
+                                        <div class="content-list">
+                                            {{ range .points }}
+                                            <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                <div class="inner">
+                                                    <span class="item">
+                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                        <span class="text">{{- .text -}}</span>
+                                                    </span>
+                                                </div>
+                                            </div><!-- /.themeslat-list -->
+                                            {{ end }}
+                                        </div><!-- /.content-list -->
+                                        <div class="themesflat-headings style-1 clearfix">                                             
+                                            <p class="sub-heading margin-top-30">{{ .description2 | markdownify }}</p>
+                                        </div>
+                                        <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
+                                        <div class="elm-button">
+                                            <a href='{{- $.Site.BaseURL -}}'  class="themesflat-button bg-white">{{ .link | upper }}</a>
+                                        </div>
+                                    </div><!-- /.themesflat-content-box --> 
+                                    <div class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container-fluid -->
+                    </div>
+                    {{ end }}
+
                </div><!-- /.page-content -->
             </div><!-- /#inner-content -->
         </div><!-- /#site-content -->
