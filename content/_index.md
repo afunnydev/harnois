@@ -49,20 +49,19 @@ section2:
         anchor: support
 section3:
   title: Modular design
-  subtitle: Rent the perfect customized building to your customers
   description: >-
-    EzKit<sup>TM</sup> is designed to be flexible. You can choose from different structure lengths and options, then mix and match them as needed to offer your clients a product that is customized to them. EzKit<sup>TM</sup> is engineered to meet the unique and needs of your customers, while ensuring you always have products in stock to rent out.
+    **Rent the perfect customized building to your customers**. EzKit<sup>TM</sup> is designed to be flexible. You can choose from different structure lengths and options, then mix and match them as needed to offer your clients a product that is customized to them. EzKit<sup>TM</sup> is engineered to meet the unique and needs of your customers, while ensuring you always have products in stock to rent out.
   box1:
     title: Need more information?
     description: >-
       Our experts will be happy to answer any questions you may have and to discuss your project.
     link:
       text: Get in touch
-      anchor:
+      anchor: contact-us-form
   box2:
     title: Choose your structure
     description: >-
-      The steel structure is both durable and versatile. The width is set at 30’ and you can choose from three length options: 35’, 45’ or 65’. The standard model comes with two open ends and is covered by a membrane to let natural light in, providing a bright space for your clients. 
+      The width is set at 30’ and you can choose from three length options: 35’, 45’ or 65’. The standard model comes with two open ends and is covered by a membrane to let natural light in, providing a bright space for your clients. 
     image: /images/ezkit-modular-design.jpg
 section4:
   image: /images/ezkit-add-options.jpg
@@ -109,10 +108,6 @@ section6:
     - text: Order and receive replacement parts quickly
     - text: Comes in a kit to help with handling and inventory management 
 section7:
-  title: Learn more about this new product, which you can rent out easily to your clients.
-  link:
-    text: Contact Us
-section8:
   title: Product specifications
   points:
     - text: Can be built on most sites or surfaces
@@ -120,6 +115,11 @@ section8:
     - text: Covering that allows light penetration
     - text: Three lengths available (35’, 45’ and 65’)
   ctatitle: Get the EzKit<sup>TM</sup> guide and keep all the information you need at your fingertips
+  image: /images/ezkit-product-specs.jpg
+section8:
+  title: Learn more about this new product, which you can rent out easily to your clients.
+  link:
+    text: Contact Us
 section9: 
   title: Expert support
   icons:

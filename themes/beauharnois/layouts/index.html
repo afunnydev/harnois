@@ -182,8 +182,7 @@
                                 <div class="themesflat-spacer clearfix" data-desktop="61" data-mobile="60" data-smobile="60"></div>
                                 <div class="themesflat-headings style-1 text-center clearfix">
                                     <h2 class="heading font-size-30">{{ .title | upper | markdownify }}</h2>
-                                    <p class="sub-heading font-weight-400" style="margin-top: 0; margin-bottom: 20px">{{ .subtitle | markdownify }}</p>
-                                    <p class="sub-heading font-weight-400">{{ .description | markdownify }}</p>
+                                    <p class="sub-heading font-weight-400" style="max-width: 700px;">{{ .description | markdownify }}</p>
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="20" data-mobile="15" data-smobile="10"></div>
                             </div><!-- /.col-md-12 -->
@@ -344,6 +343,54 @@
                     {{ end }}
 
                     {{ with .Params.section7 }}
+                    <div class="row-about" id="product-specs">
+                        <div class="container-fluid">
+                            <div class="row d-flex flex-row-reverse equalize sm-equalize-auto flat-content-wrap">
+                                <div class="col-md-6 order-first order-md-2 half-background style-1" style="background-image: url('{{ .image }}')">
+                                    
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6 bg-light-grey">
+                                    <div class="themesflat-spacer clearfix" data-desktop="64" data-mobile="60" data-smobile="60"></div>
+                                    <div class="themesflat-content-box clearfix" data-margin="0 25% 0 4.5%" data-mobilemargin="0 0 0 4.5%">
+                                        <div class="themesflat-headings style-1 clearfix">
+                                            <h2 class="heading">{{ .title | upper }}</h2>
+                                            <div class="sep has-width w80 accent-bg margin-top-11 clearfix"></div>                                               
+                                        </div>
+                                        <div class="themesflat-spacer clearfix" data-desktop="26" data-mobile="35" data-smobile="35"></div>
+                                        <div class="content-list">
+                                            {{ range .points }}
+                                            <div class="themesflat-list has-icon style-1 icon-left clearfix">
+                                                <div class="inner">
+                                                    <span class="item">
+                                                        <span class="icon"><i class="fa fa-check-square"></i></span>
+                                                        <span class="text">{{- .text -}}</span>
+                                                    </span>
+                                                </div>
+                                            </div><!-- /.themeslat-list -->
+                                            {{ end }}
+                                        </div><!-- /.content-list -->
+                                        <div class="themesflat-spacer clearfix" data-desktop="42" data-mobile="35" data-smobile="35"></div>
+                                        <div class="item" style="width: 95%;">
+                                            <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>  
+                                            <div class="themesflat-content-box clearfix" data-margin="0 0 0 11px" data-mobilemargin="0 0 0 0">
+                                                <div class="inner pd35 bg-ffc">
+                                                    <h5 class="title text-white line-height-24 padding-left-7">{{ .ctatitle | upper | markdownify }}</h5>
+                                                    <div class="themesflat-spacer clearfix" data-desktop="16" data-mobile="16" data-smobile="16"></div>
+                                                    <div class="button-wrap has-icon icon-right size-14">
+                                                        <a href="#" class="themesflat-button bg-white color-333 w100 font-weight-400 no-letter-spacing pd26"><span>Download <span class="icon"><i class="fa fa-file-pdf-o"></i></span></span></a>
+                                                    </div><!-- /.button-wrap -->
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                    </div><!-- /.themesflat-content-box --> 
+                                    <div class="themesflat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container-fluid -->
+                    </div>
+                    {{ end }}
+
+                    {{ with .Params.section8 }}
                     <div class="row-quote bg-row-1" style="background-image: url('/images/bg-cta-rectangle.jpg')">
                         <div class="container">
                             <div class="row">
@@ -365,46 +412,6 @@
                                 </div><!-- /.col-md-12 -->
                             </div><!-- /.row -->
                         </div><!-- /.container -->
-                    </div>
-                    {{ end }}
-
-                    {{ with .Params.section8 }}
-                    <div class="container" id="product-specs">
-                        <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="30" data-smobile="20"></div> 
-                        <div class="row">
-                            <div class="flat-content-wrap style-2 clearfix">
-                                <div class="item">
-                                    <div class="inner">
-                                        <div class="themesflat-spacer clearfix" data-desktop="10" data-mobile="10" data-smobile="10"></div>  
-                                        <h5 class="title">{{ .title | upper }}</h5>
-                                        <div class="themesflat-spacer clearfix" data-desktop="8" data-mobile="8" data-smobile="8"></div> 
-                                        {{ range .points }}    
-                                        <div class="themesflat-list has-icon style-1 icon-left size-16 clearfix">
-                                            <div class="inner">
-                                                <span class="item">
-                                                    <span class="icon"><i class="fa fa-check-circle"></i></span>
-                                                    <span class="text">{{- .text -}}</span>
-                                                </span>
-                                            </div>
-                                        </div><!-- /.themeslat-list -->
-                                        {{ end }}
-                                    </div>
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="35"></div>  
-                                    <div class="themesflat-content-box clearfix" data-margin="0 0 0 11px" data-mobilemargin="0 0 0 0">
-                                        <div class="inner pd35 bg-ffc">
-                                            <h5 class="title text-white line-height-24 padding-left-7">{{ .ctatitle | upper | markdownify }}</h5>
-                                            <div class="themesflat-spacer clearfix" data-desktop="16" data-mobile="16" data-smobile="16"></div>
-                                            <div class="button-wrap has-icon icon-right size-14">
-                                                <a href="#" class="themesflat-button bg-white color-333 w100 font-weight-400 no-letter-spacing pd26"><span>Download <span class="icon"><i class="fa fa-file-pdf-o"></i></span></span></a>
-                                            </div><!-- /.button-wrap -->
-                                        </div>
-                                    </div>                                    
-                                </div>       
-                            </div>
-                        </div>
-                        <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="30" data-smobile="20"></div> 
                     </div>
                     {{ end }}
 
@@ -474,19 +481,19 @@
                                                 <div class="themesflat-spacer clearfix" data-desktop="8" data-mobile="8" data-smobile="8"></div>
                                                 <form action='/appointment-in-progress' netlify name="book-{{$.Lang}}" role="form" method="post" class="contact-form wpcf7-form">
                                                     <span class="wpcf7-form-control-wrap your-name">
-                                                        <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}' required>
+                                                        <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                                     </span>
                                                     <span class="wpcf7-form-control-wrap your-phone">
-                                                        <input type="text" tabindex="1" id="company" name="company" value="" class="wpcf7-form-control" placeholder='{{ i18n "company" }}'>
+                                                        <input type="text" tabindex="1" id="company" name="company" value="" class="wpcf7-form-control" placeholder='{{ i18n "company" }}*' required>
                                                     </span>
                                                     <span class="wpcf7-form-control-wrap your-email">
-                                                        <input type="text" tabindex="2" id="phone" name="state" value="" class="wpcf7-form-control" placeholder='{{ i18n "state" }}' required>
+                                                        <input type="text" tabindex="2" id="phone" name="state" value="" class="wpcf7-form-control" placeholder='{{ i18n "state" }}*' required>
                                                     </span>
                                                     <span class="wpcf7-form-control-wrap your-phone">
-                                                        <input type="text" tabindex="2" id="phone" name="phone" value="" class="wpcf7-form-control" placeholder='{{ i18n "phone" }}'>
+                                                        <input type="text" tabindex="2" id="phone" name="phone" value="" class="wpcf7-form-control" placeholder='{{ i18n "phone" }}*' required>
                                                     </span> 
                                                     <span class="wpcf7-form-control-wrap your-email">
-                                                        <input type="email" tabindex="3" id="email" name="email" value="" class="wpcf7-form-control" placeholder="Email" required>
+                                                        <input type="email" tabindex="3" id="email" name="email" value="" class="wpcf7-form-control" placeholder="Email*" required>
                                                     </span> 
 
                                                     <span class="wrap-submit">
@@ -516,7 +523,7 @@
                                 </div>
                                 <div class="themesflat-spacer clearfix" data-desktop="36" data-mobile="35" data-smobile="35"></div>
                                 <div class="themesflat-contact-form style-2 clearfix">
-                                    <form id="contactform" action='/thank-you' role="form" method="post" class="form-submit contact-form wpcf7-form">
+                                    <form id="contactform" netlify action='/thank-you' role="form" method="post" class="form-submit contact-form wpcf7-form">
                                         <span class="wpcf7-form-control-wrap your-name">
                                             <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                         </span>
@@ -545,7 +552,7 @@
                                             <span class="wpcf7-form-control wpcf7-acceptance">
                                                 <span class="wpcf7-list-item">
                                                     <label>
-                                                        <input type="checkbox" name="agree_newsletter" value="" aria-invalid="false">
+                                                        <input type="checkbox" name="agree_newsletter" value="true" aria-invalid="false">
                                                         <span class="wpcf7-list-item-label">I agree to be registered on the MegaDome<sup>®</sup> Buildings mailing list, and to receive information on products, promotions and services. We are committed to protecting your privacy. You can unsubscribe from the mailing list at any time.</span>
                                                     </label>
                                                 </span>
@@ -558,7 +565,7 @@
                                             <span class="wpcf7-form-control wpcf7-acceptance">
                                                 <span class="wpcf7-list-item">
                                                     <label>
-                                                        <input type="checkbox" name="going_ara" value="" aria-invalid="false">
+                                                        <input type="checkbox" name="going_ara" value="true" aria-invalid="false">
                                                         <span class="wpcf7-list-item-label">I am going to the ARA Rental show in 2019.</span>
                                                     </label>
                                                 </span>
