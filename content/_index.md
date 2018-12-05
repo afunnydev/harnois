@@ -2,7 +2,7 @@
 title: "Rental solution to protect storage from the elements | EzKit"
 description: >-
   Temporary fabric buildings that equipment rental centers can rent out to their customers. Discover this product.
-image: 
+image: /images/ezkit-megadome-rental-banner.jpg
 menuid: home
 draft: false
 notloaded: 
