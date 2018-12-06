@@ -138,6 +138,19 @@ sup {
 .icomoon-soutien-continu {
 	font-size: 110%;
 }
+#support {
+	background-image: url('/images/ezkit-support-black.jpg');
+	h2.heading {
+		color: white;
+	}
+	.sep-solid {
+		border-color: white;
+	}
+}
+#book-an-appointment {
+	background-image: url('/images/ezkit-book-appointment-2.jpg');
+	background-repeat: no-repeat;
+}
 
 /******** CONTACT ********/
 .themesflat-headings.style-1 .heading.akia-contact {
@@ -169,16 +182,18 @@ sup {
     cursor: pointer;
     animation: all 2s linear;
     z-index: 31;
+    opacity: 1 !important;
+    background-color: transparent;
     .triggering-modal {
     	position: relative;
 	    padding: 15px;
-	    background-color: #fff;
+	    background-color: $accentcolor;
 	    border-radius: 4px;
 	    p {
 	    	margin-bottom: 5px !important;
+	    	color: white;
 	    }
 	   	.modal-heading {
-	   		color: $accentcolor;
     		font-weight: 600;
     		text-transform: uppercase;
 	   	}
@@ -253,7 +268,7 @@ sup {
         margin-bottom: 20px;
     }
     .triggering-modal-wrapper {
-    	display: none !important;
+    	opacity: 0 !important;
     }
 }
 
@@ -287,6 +302,28 @@ sup {
 @media only screen and (max-width: 767px) {
 	.themesflat-gallery.style-1 .text-wrap {
 		left: 20px;		
+	}
+	#support {
+		background-image: none;
+		h2.heading {
+			color: black;
+		}
+		.sep-solid {
+			border-color: black;
+		}
+	}
+	#book-an-appointment {
+		background-attachment: initial;
+    	background-position: center 20%;
+	}
+	#contact-back-home {
+		background-image: url('/images/ezkit-contact.jpg');
+	    height: 300px;
+	    background-size: cover;
+	    background-position: center center;
+	    img {
+	    	display: none !important;
+	    }
 	}
 }
 

@@ -183,6 +183,10 @@
             $(document).on('click', '#main-nav-mobi .arrow', function() {
                 $(this).toggleClass('active').next().slideToggle();
             })
+            $(document).on('click', '#main-nav-mobi li a', function(){
+                $('.mobile-button').toggleClass('active');
+                $('#main-nav-mobi').slideToggle();
+            })
         },
 
         // Scroll to Top
