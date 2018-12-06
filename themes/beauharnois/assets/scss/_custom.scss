@@ -233,6 +233,14 @@ sup {
 	   	}
     }
 }
+.modal-checkbox {
+	font-size: 12px;
+    line-height: 1.4;
+    color: white;
+    input {
+    	margin-right: 10px !important;
+    }
+}
 .modal-open .triggering-modal-wrapper {
 	display: none !important;
 }
