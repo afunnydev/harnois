@@ -35,6 +35,10 @@ jQuery( document ).ready(function($) {
         }
       }
     });
+  $('.triggering-modal .close-btn').click(function(e){
+    e.stopPropagation();
+    $('.triggering-modal-wrapper').toggleClass('hidden');
+  });
   $( window ).load(function() {
     if ($('body').hasClass('attach-scroll-handler')) {
       // Cache selectors

@@ -176,14 +176,17 @@ sup {
     width: 400px;
     height: 62px;
     position: fixed;
-    bottom: 50px;
+    bottom: 80px;
     right: 0;
     padding: 10px;
     cursor: pointer;
     animation: all 2s linear;
-    z-index: 31;
+    z-index: 20;
     opacity: 1 !important;
     background-color: transparent;
+    &.hidden {
+		display: none !important;
+	}
     .triggering-modal {
     	position: relative;
 	    padding: 15px;
@@ -192,6 +195,8 @@ sup {
 	    p {
 	    	margin-bottom: 5px !important;
 	    	color: white;
+	    	max-width: 75%;
+	    	font-size: 13px;
 	    }
 	   	.modal-heading {
     		font-weight: 600;
@@ -203,6 +208,28 @@ sup {
 		    top: 50%;
 		    right: 20px;
 		    transform: translateY(-50%);
+	   	}
+	   	.close-btn {
+	   		&:before {
+	   			content: '';
+			    width: 15px;
+			    height: 15px;
+			    position: absolute;
+			    top: 12.5px;
+			    right: 12.5px;
+			    background-size: contain;
+			    opacity: .3;
+	   			background-image: url('/images/Icon-Close-Light.png');
+    			opacity: .6;
+    			-webkit-transition: 0.3s opacity;
+    			-moz-transition: 0.3s opacity;
+    			-ms-transition: 0.3s opacity;
+    			-o-transition: 0.3s opacity;
+    			transition: 0.3s opacity;
+	   		}
+	   		&:hover {
+	   			opacity: 1;
+	   		}
 	   	}
     }
 }
@@ -268,7 +295,7 @@ sup {
         margin-bottom: 20px;
     }
     .triggering-modal-wrapper {
-    	opacity: 0 !important;
+    	display: none !important;
     }
 }
 
