@@ -41,7 +41,7 @@
                         {{ range .Site.Data.menu.main }}
                         <!-- <li class="menu-item current-menu-item"> -->
                         <li class='menu-item {{ with .class }}{{ . }} {{ end }}{{ if and (eq $.Params.layout "contact") (eq .link "contactPage") }}current-menu-item{{ end }}'>
-                            <a id="click-menu-{{- .en | urlify -}}" href="{{ if and $.IsHome .homelink }}#{{ .homelink }}{{ else if and (not $.IsHome) .homelink}}{{ $.Site.BaseURL }}#{{ .homelink }}{{ else if .link}}{{ $.Scratch.Get .link }}{{ end }}">
+                            <a id="click-menu-{{- .en | urlize -}}" href="{{ if and $.IsHome .homelink }}#{{ .homelink }}{{ else if and (not $.IsHome) .homelink}}{{ $.Site.BaseURL }}#{{ .homelink }}{{ else if .link}}{{ $.Scratch.Get .link }}{{ end }}">
                                 {{ if eq $.Lang "fr" }}{{ .fr | upper }}{{ else if eq $.Lang "en" }}{{ .en | upper }}{{ end }}
                             </a>
                         </li>
