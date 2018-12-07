@@ -1,4 +1,4 @@
-baseURL = "https://harnois-ezkit.netlify.com/"
+baseURL = "http://ezkit.harnois.com/"
 DefaultContentLanguage = "en"
 title = "EzKit"
 theme = "beauharnois"
@@ -24,15 +24,15 @@ defaultContentLanguageInSubdir = false
   ## Include google maps, with API Key
   googleapikey = ""
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = "https://harnois-ezkit.netlify.com/"
-  siteaddressno = "https://harnois-ezkit.netlify.com"
+  siteaddress = "http://ezkit.harnois.com/"
+  siteaddressno = "http://ezkit.harnois.com"
   ## FB share info
   fbpagename = ""
   fbappid = ""
   ## Business name in Schema.org
   schemabiz = "EzKit"
   ## Google Tag Manager tracking ID
-  gtmid = ""
+  gtmid = "GTM-NL2B6G8"
 
 # MARKDOWN
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
