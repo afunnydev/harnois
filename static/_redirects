@@ -1,6 +1,7 @@
-# Redirect with a 200
+# Redirect with a 302
 
-/this /that 301
+/fr / 302
+/fr/* / 302
 
 
 
