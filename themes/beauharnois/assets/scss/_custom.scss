@@ -363,6 +363,11 @@ sup {
 	    	display: none !important;
 	    }
 	}
+	.col.span_1_of_4 {
+		flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+		-ms-flex-preferred-size: 100%;
+	}
 }
 
 @media only screen and (max-width: 479px) {
