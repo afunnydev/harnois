@@ -79,7 +79,7 @@
                                             <div class="themesflat-spacer clearfix" data-desktop="10" data-mobile="10" data-smobile="10"></div>
 
                                             <span class="wrap-submit">
-                                                <input type="submit" value='{{ i18n "send_message" }}' class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
+                                                <input type="submit" value='{{ i18n "send_message" }}' class="submit wpcf7-form-control wpcf7-submit" id="click-contact-submit" name="submit">
                                             </span>                                                            
                                         </form>
                                     </div><!-- /.themesflat-contact-form -->
@@ -124,7 +124,7 @@
                                                         <li class="clearfix">
                                                             <div class="inner">
                                                                 <span class="fa fa-envelope"></span>
-                                                                <a href="mailto:{{ .email }}" target="_blank"><span class="text">{{ .email }}</span></a>
+                                                                <a id="click-contact-email" href="mailto:{{ .email }}" target="_blank"><span class="text">{{ .email }}</span></a>
                                                             </div>
                                                         </li>
                                                     </ul>  
