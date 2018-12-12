@@ -9,14 +9,13 @@ notloaded:
   need: false
   image: 
 section1:
-  subtitle: A smart rental solution to protect storage from the elements
-  title1: TEMPORARY FABRIC BUILDINGS THAT EQUIPMENT RENTAL CENTERS 
-  title2: CAN RENT OUT TO THEIR CUSTOMERS
-  image: /images/ezkit-megadome-rental-banner.jpg
+  subtitle: Rent it to your customers
+  title1: A SMART RENTAL SOLUTION TO PROTECT STORAGE FROM THE ELEMENTS
+  image: /images/construction-ezkit.jpg
 section2:
   title: WHY THE EZKIT<sup>TM</sup> IS PERFECT FOR YOUR CUSTOMERS 
   description: >-
-    EzKit<sup>TM</sup> is a temporary fabric building that equipment rental centers can purchase and rent out to their customers to answer their short-term storage needs. Designed to protect storage from the elements, it is durable enough to rent out many times without damage.
+    EzKit<sup>TM</sup> is a temporary fabric building that equipment rental centers can rent out to their customers to answer their short-term storage needs.
   icons1:
     - title: Modular design
       description: >-
@@ -27,7 +26,7 @@ section2:
         anchor: design
     - title: Adapted to multiple sectors
       description: >-
-        EzKit<sup>TM</sup> meets the various needs of the industrial, municipal and agricultural sectors.
+        EzKit<sup>TM</sup> meets the various needs of the construction, industrial, and agricultural sectors.
       icon: fas fa-check-square
       link:
         text: Learn more
@@ -50,7 +49,7 @@ section2:
 section3:
   title: Modular design
   description: >-
-    **Rent the perfect customized building to your customers**.<br>EzKit<sup>TM</sup> is designed to be flexible. You can choose from different structure lengths and options, then mix and match them as needed to offer your clients a product that is customized to them. EzKit<sup>TM</sup> is engineered to meet the unique and needs of your customers, while ensuring you always have products in stock to rent out.
+    **Rent the perfect customized building to your customers**.<br>EzKit<sup>TM</sup> is engineered to meet the unique needs of your customers, while ensuring you always have products in stock to rent out.
   box1:
     title: Need more information?
     description: >-
@@ -67,7 +66,7 @@ section4:
   image: /images/ezkit-add-options.jpg
   title: Add options
   description: >-
-    Choose from different options to create the right temporary structure. Each option is sold separately and can be added to any structure. The modular design of the EzKit<sup>TM</sup> allows you to configure each structure so you can rent it out with the specific options your clients need. 
+    Choose from different options to create the right temporary structure. Each option is sold separately and can be added to any structure.
   tabs:
     - title: Branded
       description: Personalize your temporary building by adding your company logo on the fabric.
@@ -89,14 +88,14 @@ section5:
       icon: ion-ios-nutrition
     - title: Industrial
       description: >-
-        **Use on mining or forestry sites to store machinery and materials during construction projects** <br>
+        **Use on mining or forestry sites to store machinery** <br>
         Common uses: equipment and bulk storage, recycling, composting and more.
       icon: fas fa-industry
-    - title: Municipal
+    - title: Construction
       description: >-
-        **Perfectly adapted for public spaces and events, crisis management, ports or sports activities** <br>
-        Common uses: equipment and bulk storage, road signs, machinery, emergency shelters and more.
-      icon: fas fa-city
+        **Perfectly adapted for construction sites** <br>
+        Common uses: workshop, building materials and machinery storage and much more.
+      icon: fas fa-hammer
 section6:
   image: /images/ezkit-easy-to-rent.jpg
   title: Easy to rent
@@ -114,6 +113,7 @@ section7:
     - text: Steel structure
     - text: Covering that allows light penetration
     - text: Three lengths available (35’, 45’ and 65’)
+    - text: Width is set at 30’
   ctatitle: Get the EzKit<sup>TM</sup> guide and keep all the information you need at your fingertips
   image: /images/ezkit-product-specs.jpg
 section8:
@@ -136,9 +136,9 @@ section9:
         Contact our head office anytime to order top-quality parts and accessories. You can count on fast delivery to ensure you always have the components you need in stock to rent out your products. 
       icon: icomoon-pieces-accessoires
 section10:
-  title: Book an appointment
+  title: Meet us at the ARA Rental Show
   description: >-
-    Our team will be at the ARA Rental Show in Anaheim from February 18 to 20, 2019. Stop by and see them to ask any questions you may have and to discuss your project. Our experts will also be happy to come to your office if you prefer. Just fill out the form below and we’ll get back to you as soon as we can.
+    Our team will be at the ARA Rental Show in Anaheim from February 18 to 20, 2019. Fill in the form to book an appointment with one of our experts.
 section11:
   title: Contact Us
   description: >-
