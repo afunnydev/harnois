@@ -419,7 +419,7 @@ sup {
     }
     h2.heading, .heading.font-size-30 {
         font-size: 23px !important;
-        line-height: 28px !important;
+        line-height: 30px !important;
     }
 }
 
@@ -428,19 +428,42 @@ sup {
 		display: block !important;
 	}
     #akia-home-slider {
-        padding-top: 45%;
+        padding-top: 55%;
         .content {
             .subtitle {
                 display: none !important;
             }
             .title {
-                
+                font-size: 24px;
+            }
+        }
+    }
+    h2.heading, .heading.font-size-30 {
+        font-size: 20px !important;
+        line-height: 28px !important;
+    }
+}
+@media only screen and (max-width: 400px) {
+	#akia-home-slider {
+        .content {
+            .title {
+                font-size: 22px;
             }
         }
     }
 }
-@media only screen and (max-width: 400px) {
-	
+
+@media only screen and (max-width: 300px) {
+    #akia-home-slider {
+        padding-top: 70%;
+        .content {
+            left: 10px;
+            margin-right: 10px;
+            .title {
+                font-size: 21px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1921px) {
