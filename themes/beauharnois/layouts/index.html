@@ -5,7 +5,7 @@
         <div id="site-content" class="site-content clearfix">
             <div id="inner-content" class="inner-content-wrap">
                <div class="page-content">
-                    {{ with .Params.section1 }}
+                    {{ with .Params.section1000 }}
                     <div class="rev_slider_wrapper fullwidthbanner-container">
                         <div id="rev-slider1" class="rev_slider fullwidthabanner">
                             <ul>
@@ -78,6 +78,16 @@
                                 <!-- /End Slide 1 -->
                             </ul>
                         </div> 
+                    </div>
+                    {{ end }}
+
+                    {{ with .Params.section1 }}
+                    <div id="akia-home-slider" class="overlayed" style="background-image: url('{{ .image }}')">
+                        <div class="black-overlay opacity-extra-medium"></div>
+                        <div class="content">
+                            <p class="subtitle">{{ .subtitle }}</p>
+                            <h1 class="title">{{ .title1 }} {{ .title2 }}</h1>
+                        </div>
                     </div>
                     {{ end }}
 
