@@ -84,10 +84,18 @@
                     {{ with .Params.section1 }}
                     <div id="akia-home-slider" class="overlayed" style="background-image: url('{{ .image }}')">
                         <div class="black-overlay opacity-extra-medium"></div>
-                        <div class="content">
+                        {{ with .desktop }}
+                        <div class="content desktop">
                             <p class="subtitle">{{ .subtitle }}</p>
-                            <h1 class="title">{{ .title1 }} {{ .title2 }}</h1>
+                            <h1 class="title">{{ .title }}</h1>
                         </div>
+                        {{ end }}
+                        {{ with .mobile }}
+                        <div class="content mobile">
+                            <p class="subtitle">{{ .subtitle }}</p>
+                            <h1 class="title">{{ .title }}</h1>
+                        </div>
+                        {{ end }}
                     </div>
                     {{ end }}
 

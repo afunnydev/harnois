@@ -149,6 +149,12 @@ sup {
             line-height: 1.25;
             color: white;
         }
+        &.desktop {
+            display: block !important;
+        }
+        &.mobile {
+            display: none !important;
+        }
     }
 }
 
@@ -431,10 +437,16 @@ sup {
         padding-top: 55%;
         .content {
             .subtitle {
-                display: none !important;
+                margin-bottom: 10px;
             }
             .title {
                 font-size: 24px;
+            }
+            &.desktop {
+                display: none !important;
+            }
+            &.mobile {
+                display: block !important;
             }
         }
     }

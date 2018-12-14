@@ -9,8 +9,12 @@ notloaded:
   need: false
   image: 
 section1:
-  subtitle: Rent it to your customers
-  title1: A SMART RENTAL SOLUTION TO PROTECT STORAGE FROM THE ELEMENTS
+  desktop:
+    subtitle: Rent it to your customers
+    title: A SMART RENTAL SOLUTION TO PROTECT STORAGE FROM THE ELEMENTS
+  mobile:
+    subtitle: Rental solution
+    title: TEMPORARY STORAGE BUILDING
   image: /images/construction-ezkit.jpg
 section2:
   title: WHY THE EZKIT<sup>TM</sup> IS PERFECT FOR YOUR CUSTOMERS 
