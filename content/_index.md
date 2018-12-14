@@ -10,8 +10,8 @@ notloaded:
   image: 
 section1:
   desktop:
-    subtitle: Rent it to your customers
-    title: A SMART RENTAL SOLUTION TO PROTECT STORAGE FROM THE ELEMENTS
+    subtitle: Smart rental solution
+    title: TEMPORARY FABRIC BUILDINGS TO PROTECT STORAGE FROM THE ELEMENTS
   mobile:
     subtitle: Rental solution
     title: TEMPORARY STORAGE BUILDING
