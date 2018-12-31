@@ -43,7 +43,7 @@ section2:
       link:
         text: Learn more
         anchor: features
-    - title: Expert Support
+    - title: Expert support
       description: >-
         Our experts are there to provide guidance and assistance every step of the way.
       icon: icomoon-soutien-continu
