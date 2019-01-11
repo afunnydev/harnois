@@ -1,4 +1,6 @@
-<div class="triggering-modal-wrapper">
+{{ if or (eq .Params.slug "thank-you") (eq .Params.slug "appointment-in-progress")}}
+{{ else }}
+<!-- <div class="triggering-modal-wrapper">
     <div class="triggering-modal" data-toggle="modal" data-target="#bite-28">
         <p class="modal-heading">Not an equipment rental center?</p>
         <p>Show us your interest by completing the short form<i class="fas fa-arrow-right"></i></p>
@@ -7,7 +9,18 @@
         </div>
         <div class="close-btn"></div>
     </div>
+</div> -->
+<div class="triggering-modal-wrapper">
+    <div class="triggering-modal" data-toggle="modal" data-target="#bite-33">
+        <p class="modal-heading">Going to the Rental Show</p>
+        <p>Book an appointment with one of our experts<i class="fas fa-arrow-right"></i></p>
+        <div class="modal-avatar">
+            <img src="/logos/logo-ezkit-blanc-2.png" alt="EzKit">
+        </div>
+        <div class="close-btn"></div>
+    </div>
 </div>
+{{ end }}
 <div class="modal fade position-bottom-right m-width-370" id="bite-28" bite-show="slideInUp" bite-hide="slideOutDown">
     <div class="modal-dialog animated fast">
         <div class="modal-content">
@@ -34,6 +47,37 @@
 
                     <button class="btn btn-block text-white" type="submit">Send</button>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade position-bottom-right m-width-670" id="bite-33" bite-show="fadeIn" bite-hide="fadeOut">
+    <div class="modal-dialog animated fast">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-light" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-auto popup-image-inner px-0">
+                            <img src="./images/the-ara-show-logo-1x.png" srcset="./images/the-ara-show-logo.png 2x" alt="ARA show logo" />
+                        </div>
+                        <div class="col px-0">
+                            <div class="popup-inner text-center">
+                                <div class="popup-title text-white mb-3">Meet us at the<br>ARA Rental Show</div>
+                                <p class="popup-text text-white">Book an appointment during the ARA Rental Show to get a personalized product offer, to talk about your project and to ask us your questions.</p>
+                                <form class="form-subscribe-with-name" action='/thank-you' netlify name="popup-ara-{{$.Lang}}" role="form" method="post">
+                                    <div class="input-group mb-2">
+                                        <input type="email" class="form-control text-light rounded border-0 email-address" placeholder="Enter your email" required />
+                                    </div>
+                                    <button class="btn btn-subscribe btn-block text-white mb-2" type="submit">Send</button>
+                                    <!-- <button class="btn btn-block btn-link text-white" type="submit">Learn more</button> -->
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
