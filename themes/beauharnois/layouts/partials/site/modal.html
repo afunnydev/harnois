@@ -67,11 +67,14 @@
                             <div class="popup-inner text-center">
                                 <div class="popup-title text-white mb-3">Meet us at the<br>ARA Rental Show</div>
                                 <p class="popup-text text-white">Book an appointment during the ARA Rental Show to get a personalized product offer, to talk about your project and to ask us your questions.</p>
-                                <form class="form-subscribe-with-name" action='/thank-you' netlify name="popup-ara-{{$.Lang}}" role="form" method="post">
+                                <form class="form-subscribe-with-name" action='/thank-you' netlify name="popup-ara-{{$.Lang}}" role="form" method="post" netlify-honeypot="bot-field">
                                     <div class="input-group mb-2">
                                         <input type="email" name="email" class="form-control text-light rounded border-0 email-address" placeholder="Enter your email" required />
                                     </div>
-                                    <div data-netlify-recaptcha="true" style="margin-bottom: 10px"></div>
+                                    <p style="display: none !important">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    </p>
+                                    <!-- <div data-netlify-recaptcha="true" style="margin-bottom: 10px; max-width: 60px"></div> -->
                                     <button class="btn btn-subscribe btn-block text-white mb-2" type="submit">Send</button>
                                 </form>
                             </div> 

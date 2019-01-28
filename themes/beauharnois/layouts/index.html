@@ -479,7 +479,7 @@
                                             </div><!-- /.themesflat-heading -->
                                             <div class="themesflat-contact-form style-1 clearfix">
                                                 <div class="themesflat-spacer clearfix" data-desktop="8" data-mobile="8" data-smobile="8"></div>
-                                                <form action='/appointment-in-progress' netlify name="book-{{$.Lang}}" role="form" method="post" class="contact-form wpcf7-form">
+                                                <form action='/appointment-in-progress' netlify name="book-{{$.Lang}}" role="form" method="post" class="contact-form wpcf7-form" netlify-honeypot="bot-field">
                                                     <span class="wpcf7-form-control-wrap your-name">
                                                         <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder='{{ i18n "name" }}*' required>
                                                     </span>
@@ -495,7 +495,10 @@
                                                     <span class="wpcf7-form-control-wrap your-email">
                                                         <input type="email" tabindex="3" id="email" name="email" value="" class="wpcf7-form-control" placeholder="Email*" required>
                                                     </span> 
-                                                    <div data-netlify-recaptcha="true" style="margin-bottom: 10px"></div>
+                                                    <p style="display: none !important">
+                                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                                    </p>
+                                                    <!-- <div data-netlify-recaptcha="true" style="margin-bottom: 10px; max-width: 60px"></div> -->
                                                     <span class="wrap-submit">
                                                         <input type="submit" value='{{ i18n "send" }}' class="submit wpcf7-form-control wpcf7-submit" id="click-home-book-submit" name="submit">
                                                     </span>                                                            
