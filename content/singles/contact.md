@@ -1,7 +1,7 @@
 ---
-title: "Fabric buildings for the equipment rental industry | EzKit"
+title: "Fabric buildings for the equipment rental industry | Megadome"
 description: >-
-  Equipment rental centers can rent out this temporary building to their customers to protect storage from the elements. Learn more.
+  Fabric buildings that equipment rental centers can easily install in their yards to protect their rental equipment. Discover MegaDome products
 titre: Contact Us
 identifiant: contact
 i18nlanguage: en

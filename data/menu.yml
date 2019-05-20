@@ -6,10 +6,6 @@ main:
     en: Design
     homelink: design
     class: inner-menu-link
-  - fr: Utilisation
-    en: Common uses
-    homelink: common-uses
-    class: inner-menu-link
   - fr: Fonctionnalités
     en: Features
     homelink: features
@@ -17,6 +13,10 @@ main:
   - fr: "Spécifications"
     en: Product specs
     homelink: product-specs
+    class: inner-menu-link
+  - fr: Location
+    en: Rent it
+    homelink: rent-it
     class: inner-menu-link
   - fr: Support
     en: Support
