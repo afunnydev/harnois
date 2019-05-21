@@ -1,4 +1,4 @@
-baseURL = "https://ezkit.harnois.com/"
+baseURL = "https://ezseries.harnois.com/"
 DefaultContentLanguage = "en"
 title = "EzKit"
 theme = "beauharnois"
@@ -24,13 +24,13 @@ defaultContentLanguageInSubdir = false
   ## Include google maps, with API Key
   googleapikey = ""
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = "https://ezkit.harnois.com/"
-  siteaddressno = "https://ezkit.harnois.com"
+  siteaddress = "https://ezseries.harnois.com/"
+  siteaddressno = "https://ezseries.harnois.com"
   ## FB share info
   fbpagename = ""
   fbappid = ""
   ## Business name in Schema.org
-  schemabiz = "EzKit"
+  schemabiz = "EzSeries"
   ## Google Tag Manager tracking ID
   gtmid = "GTM-MTPNGQS"
 
