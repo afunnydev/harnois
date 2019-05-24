@@ -1,5 +1,5 @@
 ---
-title: "Rental solution to protect storage from the elements | MegaDome"
+title: "Storage buildings for the rental equipment industry | MegaDome"
 description: >-
   Fabric buildings that equipment rental centers can easily install in their yards to protect their rental equipment. Discover MegaDome products.
 image: /images/ezkit-megadome-rental-banner.jpg
@@ -38,7 +38,7 @@ section2:
   icons2:
     - title: "EZkit<sup>TM</sup>: easy to rent"
       description: >-
-        One of the models in the EZ series, the EZkit<sup>TM</sup>,  is designed to solve the short-term storage needs of your clients as it’s durable enough to rent many times without damage. 
+        One of the models in the EZ series, the EZkit<sup>TM</sup>, is designed to solve the short-term storage needs of your clients as it’s durable enough to rent many times without damage. 
       icon: fas fa-key
       link:
         text: Learn more
@@ -53,7 +53,7 @@ section2:
 section3:
   title: Modular design
   description: >-
-    **Set up the perfect customized building in your yard**.<br>All of our models are engineered to meet your unique needs Choose from different models and add customized options to adapt the storage building to your equipment, or to create the perfect maintenance garage.
+    **Set up the perfect customized building in your yard**.<br>All of our models are engineered to meet your unique needs. Choose from different models and add customized options to adapt the storage building to your equipment, or to create the perfect maintenance garage.
   box1:
     title: Need more information?
     description: >-
@@ -64,7 +64,7 @@ section3:
   box2:
     title: Choose your structure
     description: >-
-      Choose from different width and length options.The standard model comes with two open ends and is covered by a membrane to let natural light in, providing a bright space for your clients. 
+      Choose from different width and length options. The standard model comes with two open ends and is covered by a membrane to let natural light in, providing a bright space for your clients. 
     image: /images/ezkit-modular-design.jpg
 section4:
   image: /images/ezkit-add-options.jpg
@@ -101,7 +101,7 @@ section6:
   image: /images/ezkit-easy-to-rent.jpg
   title: "EZkit<sup>TM</sup>: Easy to rent"
   description: >-
-    EzKit<sup>TM</sup> is a temporary building designed to solve the challenges of equipment rental centers and to meet their clients’ needs.
+    EzKit<sup>TM</sup> is a temporary building that equipment rental centers can rent to their customers.
   points:
     - text: Quick and easy to install and dismantle, requiring minimal equipment and labour
     - text: Durable enough to rent out many times without damage
