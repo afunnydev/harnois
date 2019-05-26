@@ -99,7 +99,7 @@ section5:
       icon: fas fa-hammer
 section6:
   image: /images/ezkit-easy-to-rent.jpg
-  title: "EZkit<sup>TM</sup>: Easy to rent"
+  title: "EZkit<sup>TM</sup>: Easy to rent to your customers"
   description: >-
     EzKit<sup>TM</sup> is a temporary building that equipment rental centers can rent to their customers.
   points:
