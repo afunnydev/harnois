@@ -1,7 +1,7 @@
 # Redirect with a 302
 
-/fr / 302
-/fr/* / 302
+/fr / 302!
+/fr/* / 302!
 
 
 
